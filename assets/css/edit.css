@@ -1,0 +1,87 @@
+/**************edit*********************/
+:root{
+    --primary: #00309B;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #aaa;
+    
+}
+.main-edit-personnel,
+.projets
+.users,
+.edit{
+    width: 100%;
+}
+
+.submit{
+    display: block;
+    margin-top: 10px;
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    margin: auto;
+    cursor: pointer;
+}
+.main-edit-personnel h2,
+.projets h2,
+.users h2{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.main-edit-personnel form,
+.projets form,
+.users form
+.edit .wrapper3 {
+    width: 600px;
+    background-color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+.users{
+    padding-top: 200px;   
+}
+label{
+    font-size: 1.1em;
+    font-weight: 500;
+    display: block;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.main-edit-personnel form .btn-cancel-form-staff,
+.main-edit-personnel form .btn-cancel-form-contacts{
+    background-color: #f00;
+    padding: 5px 10px;
+    color: #fff;
+    width: 15px;
+    font-weight: bolder;
+    font-size: 1.6em;
+}
+
+.main-edit-personnel form span,
+.main-edit-personnel form input{
+    display: block;    
+    width: 100%;
+    height: 25px;
+    outline: none;
+    font-size: 1.05em;
+    margin-bottom: 10px;
+}
+
+.main-edit-personnel form span a{
+    color: #fff;
+    text-decoration: none;
+}
+#submit-form-contacts,#submit-form-staff{
+    height: 30px;
+    width: 100px;
+    background-color: none;
+    font-size: 1.1em;   
+}

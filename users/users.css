@@ -1,0 +1,1435 @@
+:root{
+    --primary: #00309B;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(247, 247, 247);
+    
+}
+tr td a i{
+    margin: 10px;
+}
+
+#reduce{
+    width: 25px;
+}
+#project-option td{
+    color: #aaa;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+.sidebar{
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+   background: var(--primary);
+   transition: 0.5s ease;
+
+    /* z-index: 999; */
+}
+.sidebar header{
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #fff;
+    text-align: center;
+    
+}
+.sidebar ul li{
+    width: 250px;
+    padding: 20px 20px;
+    list-style: none;
+    border-bottom: 1px #fff solid;
+}
+.sidebar ul li:hover{
+    background: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5));
+    list-style: none;
+}
+.sidebar .deconnexion{
+    position: absolute;
+    vertical-align: bottom;
+    bottom: 0;
+    border-top: 1px #fff solid;
+}
+.sidebar .deconnexion i{
+    font-size: 1.2em;
+    margin-left: 10px;
+    margin-right: 7px;
+}
+.sidebar header{
+    margin-top: 10px;
+}
+.sidebar .image-side{
+    margin-top: 20px;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.sidebar ul li a{
+    display: block;
+    color: black;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+}
+.fa-bars{
+    color: #fff;
+    font-size: 1.2em;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    padding: 5px 10px;
+}
+
+.sidebar ul li .fas,.sidebar ul li .far{
+    font-size: 1.2em;
+    color: #fff;
+    margin-right: 25px;
+}
+.remove{
+    width: 60px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.remove-header{
+    display: none;
+}
+.header.remove-header-nav{
+    width: 96%;
+    left: 60px;
+    transition: all 0.5s ease; 
+}
+.remove-fa-bars{
+    color: #fff;
+    font-size: 1.2em;
+    background-color: black;
+    padding: 5px 10px;
+    transition: all 0.5s;
+    
+}
+.container{
+    width: 84%;
+    position: relative;
+    left: 250px;
+    display: flex;
+    transition: 0.5s ease;
+    top: 104px;
+    
+}
+.header{
+    width: 84%;    
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    left: 250px;
+    padding-right: 20px;
+    background-color: #fff;
+    height: 80px;
+    z-index: 100;
+    margin-bottom: 25px;   
+}
+.logo{
+    margin-right: 70px;
+}
+.search-bar{
+    display: flex;
+    padding: 5px 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px black solid;
+    background-color: rgba(0, 48, 155,0.1);
+    outline: none;
+    gap: 10px;
+}
+.search-bar #search{
+    width: 370px;
+    padding: 5px 10px;
+    border: none; 
+    color: #000;
+    outline: none;
+    opacity: 1;  
+}
+.search-bar label{
+    display: block;
+    margin-top: 5px;
+    color: #00309B;
+}
+.close{
+    display: none;
+}
+.header h2{
+    color: var(--primary);
+    text-transform: capitalize;
+}
+.header h2 span{
+    color: #ff793f;
+}
+.header .logo h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+.header div{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.header div .fa-bell{
+    font-size: x-large;
+}
+.header div .tools-bar {
+    display: inline-block;
+    
+}
+.header div .tools-bar span {
+    background-color: red;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: x-large;
+}
+/*------------main-----------------------*/
+
+.main{
+    width: 95%;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.main .main-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.main .main-menu .button button{
+    background-color: #00309B;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: 500;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.main .main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+.main .main-content .sales-boxes{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-color: #000;
+   
+}
+.main .main-content .sales-boxes .box{
+    width: 250px;
+    height: 150px;
+ 
+    border-radius: 5px;
+    padding: 20px 10px;
+}
+.main .main-content .sales-boxes .box i{
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+.main .main-content .sales-boxes .box p{
+    font-size: 1.6em;
+    color: #fff;
+    text-align: center;    
+}
+.main .main-content .group{
+    display: flex;
+    justify-content: space-between;
+    height: 450px;
+}
+.main .main-content .group h2{
+    text-decoration: underline;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.main .main-content .group .all_task table caption a{
+    background-color: #2ba891;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.main .main-content .group .all_task{
+    width: 100%;
+}
+.main .main-content .group .all_task table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.main .main-content .group .all_task table tr {
+    width: 100%;
+    border-bottom: 2px #aaa solid;
+    height: 35px;
+    font-size: 1.1em;
+}
+.main .main-content .group .all_task table tr th{
+    text-align: left;
+    text-transform: capitalize;
+}
+.main .main-content .activite{
+    display: flex;
+    flex-direction: column;
+    border-left: 1px black solid;
+    padding-left: 20px;
+    width: 45%;    
+    
+
+}
+.main .main-content .activite .box_act{
+    border-bottom: 5px black solid;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-style: italic;
+    font-size: 1.1em;
+}
+.extent{
+    width: 96%;
+    position: relative;
+    left: 60px;
+    transition: all 0.5s;
+}
+.home-section{
+    position: relative;
+    background: #f5f5f5;
+    min-height: 100vh;
+    width: calc(100% - 240px);
+    left: 240px;
+    transition: all 0.5s ease;
+}
+.sidebar.active ~ .home-section{
+    width: calc(100% - 60px);
+    left: 60px;
+}
+
+/*************task projects********************************************/
+.main-task-project{
+    width: 95%;
+    position: relative;
+    left: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+.main-task-project{
+    width: 94%;
+}
+.main-task-project .option button{
+    width: 100px;
+    padding: 5px 10px;
+    background-color: #aaa;
+    color: #000;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: 300;
+    font-size: 1.05em;
+}
+.main-task-project .overview_project{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.main-task-project .overview_project .head_overview{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.main-task-project .overview_project .info_projet{
+    margin-bottom: 20px;
+}
+.main-task-project .overview_project .info_projet table{
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+.main-task-project .overview_project .info_projet table tr{
+    height: 40px;
+    
+}
+.main-task-project .overview_project .info_projet table tr td{
+    text-align: left;
+    border-bottom: 1px black solid;
+    border-right: 1px black solid;
+    padding-left: 25px;
+}
+.main-task-project .overview_project .main_overview{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: top;
+    border-radius: 10px;
+    gap: 15px;
+}
+.main-task-project .overview_project .main_overview .taches-stat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin: auto;
+}
+.main-task-project .overview_project .main_overview .taches-stat .stat{
+    width: 250px;
+    height: 125px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.3em;
+    color: #fff;
+    padding-top: 25px;
+}
+.main-task-project .overview_project .main_overview .taches-stat .stat i{
+    display: block;
+    margin: auto;
+    font-size: 3em;
+}
+.main-task-project .overview_project .main_overview .activity-projet{
+    display: flex;
+    flex-direction: column;
+    display: 10px;
+    height: 350px;
+    overflow-y: scroll;
+}
+.main-task-project .overview_project .main_overview .activity-projet .atv{
+    border-bottom: 2px black solid;
+    font-style: italic;
+}
+
+
+
+.main-task-project .overview_project .main_overview .contacts_overview{
+    width: 40%;    
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.main-task-project .overview_project .main_overview  caption{
+    font-size: 1.3em;
+    font-weight: 600;
+    text-transform: capitalize;
+    width: 100%;
+}
+.main-task-project .overview_project .main_overview .contacts_overview table{
+    border-bottom: 3px black solid;
+}
+.main-task-project .overview_project .main_overview .contacts_overview table tr{
+    border: 1px black solid;
+    border-radius: 5px;
+}
+.main-task-project .overview_project .main_overview .contacts_overview tr .n_e{
+    width: 300px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2em;
+    text-transform: capitalize;
+}
+.main-task-project .overview_project .main_overview .contacts_overview tr td img{
+    width: 75px;
+    border: 3px orange solid;
+    border-radius: 50%;
+}
+.main-task-project .overview_project .footer_overview{
+    width: 100%;
+}
+.main-task-project .overview_project .footer_overview h3{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+.main-task-project .overview_project .footer_overview .bar{
+    width: 100%;
+    margin: auto;
+    height: 25px;
+    border: 1px black solid;
+    z-index: -1;
+    background-color: #aaa;
+}
+.main-task-project .overview_project .footer_overview .bar .adv_bar{
+    width: 60%;
+    height: 25px;
+    z-index: 999;
+    background-color: green;
+}
+.main-task-project .fichier_project{
+    width: 100%;
+    margin: auto;
+}
+.main-task-project .fichier_project form table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.main-task-project .fichier_project form table tr{
+    height: 55px;
+    width: 100%;
+    border-bottom: 1px black solid;
+}
+.main-task-project .fichier_project form table tr td,
+.main-task-project .fichier_project form table tr th{
+    border-bottom: 1px black solid;
+    text-align: center;
+}
+.main-task-project .main-versement table{
+    width: 100%;
+    text-align: start;
+    border-collapse: collapse;
+}
+.main-task-project .main-versement table tr td,
+.main-task-project .main-versement table tr th{
+    border-bottom: 1px black solid;
+    height: 55px;
+    text-align: start;
+}
+.td_icon{
+    display: flex;
+}
+.main-task-project .head-task-project{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.main-task-project .head-task-project button{
+    display: block;
+    width: 150px;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #778beb;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.main-task-project .filter-task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-task-project .filter-task span{
+    display: inline-block;
+    width: 70px;
+    background: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px black solid;
+    cursor: pointer;
+}
+.main-task-project .filter-task span:hover{
+    background-color: #00309B;
+    color: #fff;
+    font-weight: 500;
+}
+.main-task-project .filter-task span:focus{
+    background-color: #778beb;
+}
+.main-task-project .head-main-task h2{
+    text-transform: capitalize;
+    color: blue;
+}
+
+.main-projects .show-projects{
+
+}
+/* ---------------------------------------------*/
+
+.main-task-project .show-task table /*.staff-accept*/ {
+    border-collapse: collapse;
+    background-color: #ffffff;
+    width: 100%;
+    margin: auto;
+}
+.main-task-project .show-task table tr th {
+    /* width: calc(100%/8); */
+    font-size: 1.1em;
+    border-bottom: 1px #aaa solid;
+    padding-bottom: 10px;
+}
+.main-task-project .fichier_project .button{
+    margin-top: 20px;
+}
+.main-task-project .show-task .button{
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    width: 100%;
+    margin-top: 30px;
+}
+.main-task-project .show-task .button button,
+.main-task-project  .versement_project .main-versement .button button,
+.main-task-project .fichier_project .button button{
+    background-color: #00309B;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+}
+.main-task-project .fichier_project .button button a,
+.main-task-project .show-task div button a{
+    text-decoration: none;
+    color: #fff;
+}
+.main-task-project .show-task /*.staff-accept*/ tr td {
+    text-align: center;
+    height: 55px;
+    border-bottom: 1px #aaa69d solid;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.main-task-project .show-task /*.staff-accept*/ tr td input{
+    display: inline-block;
+    width: 20px;
+    margin-right:  55px;
+}
+.td-1{
+    width: 15px;
+}
+.main-task-project .advanced-projet{
+    margin-top: 60px;
+    color: #;
+}
+.main-task-project .advanced-projet h2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.main-task-project .advanced-projet .bar{
+    width: 80%;
+    height: 55px;
+    border: 1px black solid;
+    margin: auto;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0, 0, 0, 0.4));
+}
+
+.main-task-project .advanced-projet .bar .bar-progressive{
+    width: 0%;
+    height: 55px;
+    background: green;
+}
+.main-task-project .end-projet{
+
+}
+.main-task-project .show-task .end-projet button {
+    display: block;
+    width: 80%;
+    margin: auto;
+    background-color: green;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin-top: 100px;
+}
+.main-task-project .show-task .end-projet button:hover {
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),green;
+}
+.main-task-project .show-task .end-projet button a{
+    font-size: 1.4em;
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+.main-task-project .sales-boxes{
+    display: flex;
+    margin-top: 55px;
+    gap: 50px;
+    justify-content: center;
+
+}
+.main-task-project .sales-boxes .box1,
+.main-task-project .sales-boxes .box2,
+.main-task-project .sales-boxes .box3{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 20px #aaa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main-task-project .sales-boxes .box1
+{
+    color: #fff;
+    background-color: orange;
+}
+.main-task-project .sales-boxes .box2{
+    background-color: red;
+    color: #fff;
+}
+.main-task-project .sales-boxes .box3{
+    background-color: green;
+    color: #fff;
+}
+.main-task-project .sales-boxes  p{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+.main-task-project .sales-boxes  p .icon{
+    font-size: 2.5em;
+    display: block;
+}
+.main-task-project .activity .head-activity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.main-task-project .activity .head-activity form caption{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.main-task-project .activity .head-activity form button{
+    background-color: none;
+    color: #000;
+    width: 20px;
+}
+.main-task-project .activity .atv{
+    border-bottom: 3px #aaa solid;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.main-task-project .activity h3{
+    border: 1px black solid;
+    width: auto;
+    background-color: #f5f5f5;
+    border: none;
+
+}
+.main-task-project .activity .atv + p{
+    font-weight: bold;
+}
+
+.active-task{
+    background-color: blue;
+}
+.view-task{
+    display: block;   
+}
+.form-add-task.view-task{
+    display: block;
+    filter: blur(0);
+}
+/****************************************************************/
+/******************---main-view-----******************************/
+.main-view{
+    width: 95%;
+    position: relative;
+    left: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px 20px;
+    height: 100vh;
+}
+.main-view .wrapper_view{
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px 20px;
+    display: flex;
+    position: relative;
+    top: 55px;
+    border-radius: 20px;
+}
+.main-view .wrapper_view .image_view{
+    width: 33%;
+    
+}
+.main-view .wrapper_view .image_view img{
+    width: 250px;
+    height: 250px;
+    border-radius: 0 0 0 0;
+    border: none;
+}
+.main-view .wrapper_view .view_info{
+    width: 65%;
+}
+.main-view .wrapper_view .view_info label{
+    display: block;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.main-view .wrapper_view .view_info  input,
+.main-view .wrapper_view .view_info  select{
+    display: block;
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 500;
+    background-color: #aaa;
+    color: #000;
+    margin-bottom: 10px;
+}
+.main-view .wrapper_view .view_info  button{
+    width: 80px;
+    padding: 5px 10px;
+}
+.main-view .wrapper_view .view_info  button:hover{
+    background-color: #2c2c54;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
+}
+.main-view .wrapper_view .view_info  button a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #000;
+}
+.main-view .wrapper_view .view_info  button a:hover{
+    color: #fff;
+}
+/*-----------------------compta----------*/
+/******************taches**********************/
+.main-taches{
+    width: 95%;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.main-taches .head-menu{
+    margin-bottom: 5px;
+}
+.main-taches .taches_content .taches-stat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main-taches .taches_content .taches-stat .stat{
+    width: 250px;
+    height: 125px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.3em;
+    color: #fff;
+    padding-top: 25px;
+}
+.main-taches .taches_content .taches-stat .stat i{
+    display: block;
+    margin: auto;
+    font-size: 3em;
+}
+.main-taches .head-menu button{
+    height: 25px;
+    padding: 5px 10px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: none;
+}
+.main-taches .taches_content{
+    width: 100%;
+}
+.main-taches .taches_content .div-tache{
+    width: 100%;
+}
+.main-taches .taches_content .div-tache table{
+    width: 100%;
+}
+.main-taches .taches_content .div-tache h3{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+.main-taches .taches_content .div-tache h3 .fas{
+    background-color: green;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 50% 50% 50% 50%;
+    margin-bottom: 5px;
+}
+.main-taches .taches_content .div-tache table tr{
+    border-bottom: #aaa;
+    height: 35px;
+}
+.main-taches .taches_content .div-tache table tr td{
+    width: calc(100%/6);
+}
+#tache_continue{
+    display: block;
+    width: 100%;
+    height: 25px;
+    color: #fff;
+    background-color: orange;
+    border-radius: 20px;
+}
+#tache_finish{
+    display: block;
+    width: 100%;
+    height: 25px;
+    color: #fff;
+    background-color: green;
+    border-radius: 20px;
+}
+#tache_attende{
+    display: block;
+    width: 100%;
+    height: 25px;
+    color: #000;
+    background-color: #aaa;
+    border-radius: 20px;
+}
+#tache_retard{
+    display: block;
+    width: 100%;
+    height: 25px;
+    color: #fff;
+    background-color: #f00;
+    border-radius: 20px;
+}
+.main-taches .activity{
+    display: flex;
+    flex-direction: column;
+}
+.main-taches .activity .head-activity{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 10px;
+}
+.main-taches .activity .head-activity form caption{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.main-taches .activity .head-activity form button{
+    background-color: none;
+    color: #000;
+    width: 20px;
+}
+.main-taches .activity .atv{
+    border-bottom: 3px #aaa solid;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.main-taches .activity h3{
+    border: 1px black solid;
+    width: auto;
+    background-color: #f5f5f5;
+    border: none;
+
+}
+.main-taches .activity .atv + p{
+    font-weight: bold;
+}
+
+/*************************parametre********************************/
+.main-settings{
+    width: 90%;
+    background-color: #fff;
+    padding: 30px 35px;
+    margin: auto;
+}
+.main-settings .main_info_settings h2{
+    margin-top: 20px;
+}
+.main-settings .main_info_settings h2 span{
+    color: green;
+}
+
+.main-settings .option button{
+    width: 110px;
+    background-color: #aaa;
+    color: #000;
+    padding: 5px 10px;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: 300;
+    font-size: 1.05em;
+}
+.main-settings .wrapper{
+    width: 90%;
+    padding: 20px 20px;
+    display: flex;
+    position: relative;
+    
+}
+.main-settings .wrapper .image_view{
+
+    width: 33%;
+    
+}
+.main-settings .wrapper .image_view img{
+    width: 250px;
+    height: 250px;
+    border-radius: 0 0 0 0;
+    border: none;
+}
+.main-settings .wrapper .view_info{
+    width: 65%;
+}
+.main-settings .wrapper .view_info label{
+    display: block;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.main-settings .wrapper .view_info  input,
+.main-settings .wrapper .view_info  select{
+    display: block;
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 500;
+    background-color: #aaa;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.main-settings .wrapper .view_info  button{
+    width: 80px;
+    padding: 5px 10px;
+}
+.main-settings .wrapper .view_info  button:hover{
+    background-color: #2c2c54;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
+}
+.main-settings .wrapper .view_info  button a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: #000;
+}
+.main-settings .wrapper .view_info  button a:hover{
+    color: #fff;
+}
+.main-settings .settings_users{
+    width: 100%;
+}
+.settings_users .head-users{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.settings_users .head-users h2{
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: #00309B;
+}
+.settings_users .head-users .diff-users button{
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    font-style: italic;
+}
+.main-settings .settings_users .users table{
+    width: 100%;
+}
+.main-settings .settings_users .users table{
+    border-collapse: collapse;
+}
+.main-settings .settings_users table tr th,
+.main-settings .settings_users table tr td{
+    font-size: 1.2em;
+    text-align: center;
+    border-bottom: 1px black solid;
+}
+.main-settings .settings_users table tr td ul{
+    list-style: none;
+}
+.main-settings .settings_users table tr td img{
+    width: 100px;
+    height: 75;
+    border-radius: 50%;
+    border: 2px orangered solid;
+}
+.main-task-projet .activity{
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 1500px){
+    .sidebar{
+        position: absolute fixed;
+        z-index: 999;
+        width: 0px;
+        opacity: 0.9;
+        transition: all 0s ease;
+    }
+    .container{
+        width: 1500px;
+        left: 0;
+        transition: 0.5s ease;
+    }
+    .header{
+        width: 100%;
+        padding-left: 10px;
+        left: 0px;
+        transition: all 0.5s ease;
+        padding-right: 100px;
+    }
+    .logo{
+        margin-right: 70px;
+    }
+    .sidebar header{
+        display: block;
+    }
+    
+    .header .btn-side{
+        position: relative;
+        left: 0;
+        transition:all 0.5S ease;
+    }
+    #bars{
+        transition:all 0.5S ease;
+    }
+    .remove{
+        width: 250px;
+    }
+    .remove-fa-bars{
+        left: 180px;   
+        transition: 0.5s ease-out;
+    }
+    .close{
+        position: relative;
+        left: 225px;
+        bottom: 45px;
+        display: block;
+    }
+    
+    .sidebar .deconnexion{
+        position: relative;
+        border-top: 1px #fff solid;
+    }
+}
+@media (max-width: 1150px) {
+    .container{
+        width: 1150px;
+        transition: 0.5s ease;
+    }
+    .logo{
+        margin-right: 70px;
+    }
+}
+@media (max-width: 900px) {
+    .logo{
+        margin-right: 70px;
+    }
+}
+@media (max-width: 800px) {
+    .sales-boxes{
+        overflow-x: scroll;
+    }
+    .container{
+        width: 800PX;
+    }
+    .main-versement,
+    .show-task,
+    .fichier_project,
+    .show-staff,
+    .projet-history,
+    .show-contacts,
+    .main-project .show-projects,
+    .main-task-project .show-task{
+        width: 1000px;
+        overflow-x: scroll;
+    }
+    .container{
+        width: 1000px;
+        transition: 0.5s ease;
+    }
+    .logo{
+        margin-right: 70px;
+    }
+}
+@media (max-width: 700px) {
+
+    .container{
+        width: 700px;
+        transition: 0.5s ease;
+    }
+    .main .main-content .sales-boxes{ 
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-left: 20px;
+    }
+    .main .main-content .sales-boxes .box{
+        width: 200px;
+        height: 90px;
+        border: none;
+    }
+    .main .main-content .sales-boxes .box i{
+        font-size: 2em;
+    }
+    .main .main-content .sales-boxes .box p{
+        font-size: 1.2em;   
+    }
+    .main .main-content .group{
+        flex-direction: column;
+        height: 450px;
+    }
+    .main .main-content .group h2{
+        text-decoration: underline;
+        margin-bottom: 10px;
+    }
+    .main .main-content .projets-dash{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .main .main-content .projets-dash .pro-dash{
+        width: 100%;
+        border-bottom: 5px black solid;
+        padding-bottom: 20px;
+    }
+    .main .main-content .activite{
+        width: 100%;    
+    }
+    .main,
+    .main-view,
+    .main-settings,
+    .main-staff,
+    .main-history,
+    .main-contacts,
+    .main-task-project,
+    .main-create,
+    .main-projects{
+        width: 700px;
+        overflow-x: scroll;
+    }
+    .main-versement,
+    .show-task,
+    .fichier_project,
+    .show-staff,
+    .projet-history,
+    .show-contacts,
+    .main-projects .show-projects,
+    .main-task-project .task_block{
+        width: 700px;
+        overflow-x: scroll;
+    }
+    .header-history,
+    .settings_users .head-users,
+    .main-projects .head-main-project,
+    .main-staff .head-main-staff,
+    .main-task-project .head-task-project{
+        flex-wrap: wrap;
+    }
+    .main-task-project .overview_project .main_overview{
+        flex-direction: column;
+    }
+    .main-task-project .overview_project .main_overview .taches-stat{
+        flex-wrap: wrap;
+    }
+    .main-task-project .overview_project .main_overview .taches-stat .stat{
+        width: 250px;
+        height: 75px;
+        font-size: 1.1em;
+    }
+    .main-task-project .overview_project .main_overview .taches-stat .stat i{
+        font-size: 1.4em;
+    }
+    .main-settings .wrapper{
+        flex-direction: column;
+    }    
+    .main-settings .wrapper .image_view{
+        width: 630px;
+    }
+    .main-settings .wrapper .image_view img{
+        border-radius: 50%;
+        margin: auto;
+    }
+    .main-settings .wrapper .view_info{
+        width: 630px;
+    }
+    .main-settings .wrapper .view_info label{
+        display: block;
+        font-size: 1.3em;
+        font-weight: 500;
+    }
+
+    .main-view .wrapper_view{
+        flex-direction: column;
+    }
+    .main-view .wrapper_view .image_view{
+        width: 630px;
+    }
+    .main-view .wrapper_view .image_view img{    
+        border-radius: 50%;
+        border: 1px black solid;
+    }
+    .main-view .wrapper_view .view_info{
+        width: 630px;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media (max-width: 600px) {
+    .logo{
+        margin-right: 70px;
+    }
+}
+@media (max-width: 550px) {
+    .container{
+        width: 550px;
+        transition: 0.5s ease;
+        overflow: visible;
+    }
+    .header{
+        width: 550px;
+        flex-wrap: wrap;
+    }
+    .main .main-content .sales-boxes{ 
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-left: 35px;
+    }
+
+    .main .main-content .projets-dash{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .main .main-content .projets-dash .pro-dash{
+        width: 100%;
+        border-bottom: 5px black solid;
+        padding-bottom: 20px;
+    }
+    .main .main-content .activite{
+        width: 80%;    
+    }
+    .main-task-project .overview_project .main_overview{
+        flex-direction: column;
+    }
+    .main-task-project .overview_project .main_overview .taches-stat{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-task-project .filter-task{
+        flex-direction: column;
+    }
+    .main-staff .head-main-staff{
+        flex-wrap: wrap;
+    }    
+
+    .main-settings .wrapper .image_view{
+        width: 100%;
+    }
+    .main-settings .wrapper .image_view img{
+        border-radius: 50%;
+        margin: auto;
+    }
+    .main-settings .wrapper .view_info{
+        width: 550px;
+    }
+    .main,
+    .main-view,
+    .main-settings,
+    .main-staff,
+    .main-contacts,
+    .main-history,
+    .main-task-project,
+    .main-create,
+    .main-projects{
+        width: 550px;
+        overflow-x: scroll;
+    }
+    .main-versement,
+    .show-task,
+    .fichier_project,
+    .show-staff,
+    .projet-history,
+    .show-contacts,
+    .main-projects .show-projects,
+    .main-task-project .task_block{
+        width: 550px;
+        overflow-x: scroll;
+    }
+    .settings_users .head-users,
+    .header-history,
+    .main-projects .head-main-project,
+    .main-staff .head-main-staff,
+    .main-task-project .head-task-project{
+        flex-wrap: wrap;
+    }
+    .main-task-project .filter-task{
+        flex-direction: row;
+    }
+}
+@media (max-width: 450px) {
+    .logo{
+        margin-right: 70px;
+    }
+    .header{
+        width: 450px;
+    }
+    .container{
+        width: 450px;
+        transition: 0.5s ease;
+        overflow: visible;
+        margin: auto;
+        border-radius: 5px;
+    
+    }
+}
+@media (max-width: 400px) {
+    .container{
+        width: 400px;
+        overflow: visible;
+    }
+    #search{
+        width: 100px;
+    }
+    .main,
+    .main-history,
+    .main-view,
+    .main-settings,
+    .main-staff,
+    .main-contacts,
+    .main-task-project,
+    .main-create,
+    .main-projects{
+        width: 400px;
+        overflow-x: scroll;
+    }
+    .main-versement ,
+    .show-task,
+    .fichier_project,
+    .show-staff,
+    .projet-history,
+    .show-contacts,
+    .main-projects .show-projects,
+    .main-task-project .show-task
+    {
+        width: 400px;
+        overflow-x: scroll;
+    }
+    .settings_users .head-users,
+    .header-history,
+    .main-projects .head-main-project,
+    .main-staff .head-main-staff,
+    .main-task-project .head-task-project{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    
+} 
+.edit{
+    background-color: #fff;
+}
